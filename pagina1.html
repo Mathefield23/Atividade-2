@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link>
+     <a href="pagina1.html"><b>Novo Produto</b></a> / <a href="pagina2.html">Lista de Proutos</a>
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <div class="my-4">
+            <h1 class="display-4">Cadastro do produto</h1>
+        </div>
+
+        <form id="form">
+            <div class="mb-3">
+                <label for="Nome" class="form-label"><strong>Nome</strong></label>
+                <input type="text" class="form-control" id="Nome" name="Nome" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="Produto" class="form-label"><strong>Produto</strong></label>
+                <input type="text" class="form-control" id="Produto" name="Produto" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="Produto" class="form-label"><strong>Whatsapp</strong></label>
+                <input type="tel" class="form-control" id="Whatsapp" name="Whatsapp" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="tipo" class="form-label"><strong>Tipo de pessoa:</strong></label>
+                <select class="form-select" id="tipo" name="tipo">
+                    <option value="TipoSelecionada" selected>Selecione opção</option>
+                    <option value="tablet">Pessoa Física</option>
+                    <option value="celular">Pessoa Jurídica</option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label for="numero" class="form-label"><strong>CPF/CNJP</strong></label>
+                <input type="text" class="form-control" id="numero" name="numero" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="Tipo" class="form-label"><strong>Tipo de produto:</strong></label>
+                <select class="form-select" id="Tipo" name="Tipo">
+                    <option value="TipoSelecionada" selected>Selecione opção</option>
+                    <option value="Fisico">Físico</option>
+                    <option value="Virtual">Virtual</option>
+                </select>
+            </div>  
+           
+            <div class="mb-3">
+                <label for="status" class="form-label"><strong>Status:</strong></label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="status" id="ativo" value="ativo">
+                    <label class="form-check-label" for="ativo">Ativo</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="status" id="inativo" value="inativo">
+                    <label class="form-check-label" for="inativo">Inativo</label>
+                </div>
+            </div>
+
+    
+
+            <div>
+                <label for="observacao">Observação:</label>
+                <p></p>
+                <textarea id="observacao" name="observacao"></textarea>
+            </div>
+
+            <div class="mb-3">
+                <button type="button" class="btn btn-primary" onclick="salvarItem()">Cadastrar</button>
+                <input type="reset" class="btn btn-secondary" value="Limpar">
+            </div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
